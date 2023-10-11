@@ -24,6 +24,528 @@ body{
     background-image: url('https://res.cloudinary.com/yerevan/image/upload/v1484080037/space_xref1i.jpg');
 }
 
+.content:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba (0, 0, 0, 0.5);
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ff0f00, #ff6f00, #ffff00);
+    box-shadow: 0px 0px 2px #ffdf00, 0px 0px 7px 3px #ff6f00;
+    z-index: 10;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080038/sun_vcrvuy.gif");
+    background-position-x: -318px;
+    background-position-y: -158px;
+    background-size: 245%;
+}
+
+.sun>img{
+    border-radius: 100%;
+    height: 130px;
+    margin: auto;
+}
+
+.mercury-container{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+
+.gif-mercury{
+    background-position-x: -15px;
+    background-position-y: -3px;
+    background-size: 239%;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080036/mercury_tvm7ik.gif");
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.shadow-mercury{
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+
+.shadow-mercury>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(255, 150, 100, 0.8), rgba(255, 255, 0, 0.0));
+}
+
+.shadow-mercury>.shadow{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(255, 255, 0, 0.0));
+}
+
+.venus-container{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+}
+
+.gif-venus{
+    background-position-x: -4px;
+    background-position-y: -3px;
+    background-size: 120%;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080036/mercury_tvm7ik.gif");
+	border-radius: 100%;
+	overflow: hidden;
+    border-radius: 100%;
+}
+
+.shadow-venus{
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.shadow-venus>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(255, 255, 0, 0.0));
+}
+
+.shadow-venus>.shadow{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(255, 255, 0, 0.0));
+}
+
+.earth-moon-container{
+    position: absolute;
+    width: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.earth-container{
+    align-self: center;
+    position: relative;
+    z-index: 10;
+}
+
+.gif-earth{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.gif-earth>img{
+    width: 40px;
+    height: 40px;
+}
+
+.shadow-earth{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.shadow-earth>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    left: 2px;
+    top: 1px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(255, 155, 200, 0.4), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+}
+
+.shadow-earth>.shadow{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0,0,0,0), rgba(0, 0, 0, 0.0));
+}
+
+.moon-cntainer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.moon{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.moon>img{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+}
+
+.mars-container{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+}
+
+.gif-mars{
+    background-position-x: -5px;
+    background-position-y: -5px;
+    background-size: 125%;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080036/mars_vvdvoa.gif");
+    border-radius: 100%;
+}
+
+.shadow-mars{
+    position: relative;
+    width: 38px;
+    height: 38px;
+}
+
+.shadow-mars>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1),rgba(255, 255, 0, 0.0)); 
+}
+
+.jupiter-container{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.gif-jupiter{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.gif-jupiter>img{
+    width: 80px;
+    height: 80px;
+}
+
+.shadow-jupiter{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.shadow-jupiter>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(255, 155, 100, 0.2),rgba(255, 255, 0, 0.0),rgba(255, 255, 0, 0.0));
+}
+
+.shadow-jupiter>.shadow{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),rgba(255, 255, 0, 0.0));
+}
+
+.saturn-ring-container{
+    position: absolute;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.saturn-container{
+    align-self: center;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    z-index: 10;
+}
+
+.gif-saturn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.gif-saturn:before{
+    content: "";
+    position: absolute;
+    display: block;
+	background-color: rgba(255,175,100,0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.gif-saturn>img{
+    width: 100%;
+    height: 100%;
+}
+
+.shadow-saturn{
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
+
+.shadow-saturn>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 55px;
+    height: 55px;
+    left: 2px;
+    top: 1px;
+    border-radius: 100%;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+}
+
+.ring-container{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.gif-ring{
+    align-self: center;
+    width: 120px;
+    height: 60px;
+}
+
+.gif-ring>div{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gif-ring>div:first-child>img{
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+}
+
+.gif-ring>div:last-child>img{
+    z-index: 11;
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+}
+
+.uranus-container{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    z-index: 10;
+}
+
+.gif-uranus{
+    background-position-x: -37px;
+    background-position-y: -7px;
+    background-size: 325%;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080037/uranus_ubdhwe.gif");
+	border-radius: 100%;
+    overflow: hidden;
+}
+
+.shadow-uranus{
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.shadow-uranus>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(255, 155, 0, 0.1),rgba(255, 255, 0, 0.0));
+}
+
+.shadow-uranus>.shadow{
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),rgba(255, 255, 0, 0.0));
+}
+
+.neptune-container{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+
+.gif-neptune{
+    background-position-x: -23px;
+    background-position-y: -4px;
+    background-size: 325%;
+    background-image: url("https://res.cloudinary.com/yerevan/image/upload/v1484080036/neptune_byzweb.gif");
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.shadow-neptune{
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+
+.shadow-neptune:before{
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+	background-color: rgba(64, 64, 255, 0.1);
+    width: 22px;
+    height: 22px;
+}
+
+.shadow-neptune>.light{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+	background: linear-gradient(90deg, rgba(150, 188, 253, 0.8),rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0));
+}
+
+.shadow-neptune>.shadow{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8),rgba(255, 255, 0, 0.0));
+}
+
+.circles>div{
+    position: absolute;
+	border-radius: 100%;
+	border: 2px solid rgba(55,205,255,0.2);
+	box-sizing: border-box;
+}
+
+.planet{
+	border-radius: 100%;
+	position: absolute;
+}
+
+.controls{
+    position: fixed;
+    float: right;
+    padding: 20px;
+}
+
+.control>p{
+    display: inline-block;
+    margin: 20px;
+}
+
+button{
+    top: 0;
+    font-size: 2em;
+    padding: 10px 15px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
